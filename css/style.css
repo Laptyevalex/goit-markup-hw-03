@@ -34,27 +34,13 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
 }
 .conteiner{
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    width: 1128px;
-}
-.top-line {
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-    background: var(--white-color);
-    
+    width: 1158px;
 }
 .navigator{
     
@@ -123,8 +109,9 @@ body{
     margin-left: 40px;
 }
 .adress-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 
     color: var(--slate);
     text-decoration: none;
@@ -137,9 +124,21 @@ color: var(--iris);
 background-color: var(--white-color);
 }
 .first-section{
-    width: 1440px;
-    height: 603px;
+    padding-top: 192px;
+    padding-bottom: 192px;
     background-color: var(--navy-blue);
+}
+.second-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-third{
+    padding-bottom: 120px;
+}
+.section-fourth{
+    background-color: var(--cloud);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .conteiner.header{
     padding-top: 192px;
@@ -207,6 +206,7 @@ background-color: var(--white-color);
 }
 .filter-button{
     padding: 12px 24px;
+    border: 1px solid var(--cornflower);
 
     font-family: 'Roboto',sans-serif;
     font-style: normal;
@@ -299,6 +299,7 @@ padding-left: 0px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    text-align: center;
 }
 .team-cards{
     display: flex;
@@ -309,10 +310,6 @@ padding-left: 0px;
     margin-left: 24px;
 }
 .team-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     border: 0.5px solid var(--cloud);
 }
 .slot-card{
@@ -330,16 +327,14 @@ padding-left: 0px;
 
 .card-text {
     color: var(--slate);
-}
-.conteiner.footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
+    margin-top: 8px;
 }
 .footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--navy-blue);
+    
 }
-
 .link-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -364,10 +359,12 @@ padding-left: 0px;
 }
 .project-card{
     width: 360px;
-    height: 420px;
-    border: 0.5px solid var(--cloud);
 }
-.project-card:nth-last-child(n+6){
+.project-card:nth-child(3n+2){
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.project-card:nth-child(-n+6){
     margin-bottom: 48px;
 }
 .project-link{
@@ -377,12 +374,18 @@ padding-left: 0px;
     background-color: var(--white-color);
 }
 .card-content{
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     padding-left: 15px;
-
+    border-left: 0.5px solid var(--cloud);
+    border-right: 0.5px solid var(--cloud);
+    border-bottom: 0.5px solid var(--cloud);
     color: var(--navy-blue);
 }
 .project-card-name{
     margin-bottom: 8px;
+}
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
