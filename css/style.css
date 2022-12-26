@@ -24,36 +24,41 @@ p{
 
     line-height: 24px;
 }
-
+img {
+    display: block;
+    max-width: 100%;
+}
 body{
     background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 }
-body > .container{
-    width: 1128px;
-    margin-left: 156px;
-
-}
-.section{
+.conteiner{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 120px;
     padding-bottom: 120px;
+    width: 1128px;
 }
 .top-line {
-    display: flex;
-    size: 1128px;
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    
 
     background: var(--white-color);
     
 }
 .navigator{
-    display: flex;
+    
     align-items: center;
-
-    width: 1128px;
-    height: 72px;
 }
 
 .logo {
@@ -83,13 +88,17 @@ body > .container{
     color:var(--navy-blue);
     
 }
-.menu-nav .nav-item + .nav-item{
+
+.nav-list + .nav-list {
     margin-left: 40px;
 }
 
 .nav-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: block;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 
     color: var(--navy-blue);
     text-decoration-line: none;
@@ -104,13 +113,13 @@ body > .container{
     color: var(--iris);
 }
 .adress-menu{
-    margin-left: auto;
+    margin-left: 331px;
 }
 .adress{
     display: flex;
     margin-left: auto;
 }
-.adress .adress-item + .adress-item{
+.adress-list + .adress-list{
     margin-left: 40px;
 }
 .adress-item {
@@ -127,15 +136,14 @@ body > .container{
 color: var(--iris);
 background-color: var(--white-color);
 }
-.header {
-    padding-top: 192px;
-    padding-left: 474px;
-    padding-bottom: 192px;
-    padding-right: 474px;
-
-    background-color: var(--navy-blue);
+.first-section{
     width: 1440px;
     height: 603px;
+    background-color: var(--navy-blue);
+}
+.conteiner.header{
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 
 .header-text {
@@ -143,11 +151,21 @@ background-color: var(--white-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    margin-top: 0px;
+
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 48px;
+
+    width: 492px;
+    height: 120px;
+    text-align: center;
+    
 }
 
 .header-button {
+    width: 170px;
+    height: 51px;
+
     font-family: "Roboto", sans-serif;
     background-color: var(--iris);
     color: var(--white-color);
@@ -156,11 +174,17 @@ background-color: var(--white-color);
     line-height: 1.19;
     cursor: pointer;
     letter-spacing: 0.04em;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
-    margin-left: 161px;
+
+    border: none;
 
 }
 .filter{
@@ -168,7 +192,7 @@ background-color: var(--white-color);
     justify-content:center;
 
     margin-bottom: 72px;
-
+    border: none;
     background-color: var(--white-color);
 
 }
@@ -212,20 +236,22 @@ background-color: var(--white-color);
 .list{
     display: flex;
     padding: 0px;
+    
 }
 
 .feature + .feature{
     margin-left: 24px;
 }
-.feature-title{
-    margin-bottom: 8px;
+feature{
+    width: 260px;
 }
-.feature-title {
+.feature-title{
     color: var(--navy-blue);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .feature-text {
@@ -237,8 +263,7 @@ background-color: var(--white-color);
 }
 
 .work {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 72px;
 
     color: var(--navy-blue);
@@ -256,7 +281,6 @@ padding-left: 0px;
 }
 .team { 
     background-color: var(--cloud);
-    width: 1440px;
 }
 
 .team-title {
@@ -302,13 +326,13 @@ padding-left: 0px;
     color: var(--slate);
     padding-bottom: 32px;
 }
-
-.footer {
+.conteiner.footer{
     padding-top: 100px;
     padding-bottom: 100px;
+    
+}
+.footer{
     background-color: var(--navy-blue);
-    width: 1440px;
-    height: 310px;
 }
 
 .link-footer {
@@ -323,11 +347,12 @@ padding-left: 0px;
 .text-footer {
     margin-top: 16px;
     color: #E7E9FC;
+
+    width: 264px;
 }
 .project-cards{
     display: flex;
     flex-wrap: wrap;
-    width: 1128px;
     margin-left: auto;
     margin-right: auto;
 
