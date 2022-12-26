@@ -284,11 +284,7 @@ padding-left: 0px;
 }
 
 .team-title {
-    margin-left: 483px;
-    margin-top: 0px;
     margin-bottom: 72px;
-
-    font-family: inherit;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -297,7 +293,6 @@ padding-left: 0px;
 }
 .team-cards{
     display: flex;
-
     padding-left: 0px;
 
 }
@@ -311,10 +306,12 @@ padding-left: 0px;
 
     border: 0.5px solid var(--cloud);
 }
+.slot-card{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
 .card-name {
-    margin-top: 32px;
-    
-
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -324,7 +321,6 @@ padding-left: 0px;
 
 .card-text {
     color: var(--slate);
-    padding-bottom: 32px;
 }
 .conteiner.footer{
     padding-top: 100px;
@@ -360,11 +356,7 @@ padding-left: 0px;
 .project-card{
     width: 360px;
     height: 420px;
-    margin-right: 24px;
     border: 0.5px solid var(--cloud);
-}
-.project-card:nth-child(3n){
-    margin-right: 0px;
 }
 .project-card:nth-last-child(n+6){
     margin-bottom: 48px;
