@@ -185,7 +185,16 @@ background-color: var(--white-color);
     padding-right: 32px;
 
     border: none;
+}
+.header-button:hover,
+.header-button:focus {
+    background: var(--iris);
+    color: var(--white-color);
+}
 
+.header-button:active {
+    background: #404BBF;
+    color: var(--white-color)
 }
 .filter{
     display: flex;
